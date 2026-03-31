@@ -1,0 +1,56 @@
+[
+  {
+    "templateId": "template-1",
+    "name": "Обложка — 2 строки",
+    "category": "обложка",
+    "whenToUse": "Первый слайд, короткий заголовок"
+  },
+  {
+    "templateId": "template-2",
+    "name": "Обложка — 3 строки",
+    "category": "обложка",
+    "whenToUse": "Первый слайд, длинный заголовок"
+  },
+  {
+    "templateId": "template-3",
+    "name": "Разделитель",
+    "category": "разделитель",
+    "whenToUse": "Переход между разделами"
+  },
+  {
+    "templateId": "template-4",
+    "name": "Текстовый слайд",
+    "category": "контент",
+    "whenToUse": "Описание, вводный текст"
+  },
+  {
+    "templateId": "template-5",
+    "name": "Разделитель 2",
+    "category": "разделитель",
+    "whenToUse": "Переход к следующему блоку"
+  },
+  {
+    "templateId": "template-6",
+    "name": "Длинный список",
+    "category": "контент",
+    "whenToUse": "Много пунктов"
+  },
+  {
+    "templateId": "template-7",
+    "name": "Слайд с картинкой 1",
+    "category": "контент",
+    "whenToUse": "Текст + визуал"
+  },
+  {
+    "templateId": "template-8",
+    "name": "Слайд с картинкой 2",
+    "category": "контент",
+    "whenToUse": "Текст + визуал, вариант 2"
+  },
+  {
+    "templateId": "template-9",
+    "name": "Буллеты",
+    "category": "контент",
+    "whenToUse": "Ключевые тезисы"
+  }
+]

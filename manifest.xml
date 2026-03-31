@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp
+  xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+  xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+  xsi:type="TaskPaneApp">
+
+  <!-- Уникальный ID — не меняй -->
+  <Id>12345678-1234-1234-1234-123456789012</Id>
+
+  <Version>1.0.0</Version>
+  <ProviderName>Finam</ProviderName>
+  <DefaultLocale>ru-RU</DefaultLocale>
+  <DisplayName DefaultValue="Finam Presentation AI" />
+  <Description DefaultValue="AI-генератор корпоративных презентаций Финам" />
+
+  <!-- Иконки (можно заменить на свои) -->
+  <IconUrl DefaultValue="https://localhost:3000/assets/icon-32.png" />
+  <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/icon-64.png" />
+
+  <!-- Разрешения -->
+  <Permissions>ReadWriteDocument</Permissions>
+
+  <!-- Хосты — указываем PowerPoint -->
+  <Hosts>
+    <Host Name="Presentation" />
+  </Hosts>
+
+  <!-- Главная страница по умолчанию -->
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://localhost:3000/index.html" />
+  </DefaultSettings>
+
+  <!-- Расширенные настройки для PowerPoint -->
+  <VersionOverrides
+    xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+    xsi:type="VersionOverridesV1_0">
+
+    <Hosts>
+      <Host xsi:type="Presentation">
+        <DesktopFormFactor>
+
+          <!-- Кнопка на ленте PowerPoint -->
+          <ExtensionPoint xsi:type="PrimaryCommandSurface">
+            <OfficeTab id="TabHome">
+              <Group id="FinamGroup">
+                <Label resid="GroupLabel" />
+
+                <Control xsi:type="Button" id="FinamButton">
+                  <Label resid="ButtonLabel" />
+                  <Supertip>
+                    <Title resid="ButtonLabel" />
+                    <Description resid="ButtonTooltip" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16" />
+                    <bt:Image size="32" resid="Icon32" />
+                    <bt:Image size="80" resid="Icon80" />
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>FinamPane</TaskpaneId>
+                    <SourceLocation resid="TaskpaneUrl" />
+                  </Action>
+                </Control>
+
+              </Group>
+            </OfficeTab>
+          </ExtensionPoint>
+
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+
+    <!-- Ресурсы (строки, URL, иконки) -->
+    <Resources>
+      <bt:Urls>
+        <bt:Url id="TaskpaneUrl" DefaultValue="https://localhost:3000/index.html" />
+      </bt:Urls>
+
+      <bt:ShortStrings>
+        <bt:String id="GroupLabel" DefaultValue="Finam AI" />
+        <bt:String id="ButtonLabel" DefaultValue="Создать презентацию" />
+      </bt:ShortStrings>
+
+      <bt:LongStrings>
+        <bt:String id="ButtonTooltip" DefaultValue="Сгенерировать презентацию с помощью AI" />
+      </bt:LongStrings>
+
+      <bt:Images>
+        <bt:Image id="Icon16" DefaultValue="https://localhost:3000/assets/icon-16.png" />
+        <bt:Image id="Icon32" DefaultValue="https://localhost:3000/assets/icon-32.png" />
+        <bt:Image id="Icon80" DefaultValue="https://localhost:3000/assets/icon-80.png" />
+      </bt:Images>
+    </Resources>
+
+  </VersionOverrides>
+</OfficeApp>

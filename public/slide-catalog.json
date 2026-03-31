@@ -1,0 +1,116 @@
+[
+  {
+    "templateId": "template-1",
+    "name": "Обложка — 2 строки",
+    "category": "обложка",
+    "whenToUse": "Первый слайд, короткий заголовок",
+    "fields": [
+      "title",
+      "subtitle",
+      "name",
+      "position"
+    ]
+  },
+  {
+    "templateId": "template-2",
+    "name": "Обложка — 3 строки",
+    "category": "обложка",
+    "whenToUse": "Первый слайд, длинный заголовок с описанием",
+    "fields": [
+      "title",
+      "subtitle",
+      "description",
+      "name",
+      "position"
+    ]
+  },
+  {
+    "templateId": "template-3",
+    "name": "Разделитель (синий)",
+    "category": "разделитель",
+    "whenToUse": "Переход между разделами, акцентный",
+    "fields": [
+      "divider_text"
+    ]
+  },
+  {
+    "templateId": "template-4",
+    "name": "Текстовый слайд",
+    "category": "контент",
+    "whenToUse": "Описание, вводный текст, пояснение",
+    "fields": [
+      "title",
+      "paragraph1"
+    ]
+  },
+  {
+    "templateId": "template-5",
+    "name": "Разделитель (тёмный)",
+    "category": "разделитель",
+    "whenToUse": "Переход к следующему блоку, минималистичный",
+    "fields": [
+      "divider_text"
+    ]
+  },
+  {
+    "templateId": "template-6",
+    "name": "Длинный список",
+    "category": "контент",
+    "whenToUse": "Много пунктов (до 13), перечисление",
+    "fields": [
+      "title",
+      "list_item_1",
+      "list_item_2",
+      "list_item_3",
+      "list_item_4",
+      "list_item_5",
+      "list_item_6",
+      "list_item_7",
+      "list_item_8",
+      "list_item_9",
+      "list_item_10",
+      "list_item_11",
+      "list_item_12",
+      "list_item_13"
+    ]
+  },
+  {
+    "templateId": "template-7",
+    "name": "Слайд с картинкой 1",
+    "category": "контент",
+    "whenToUse": "Текст слева + визуал справа",
+    "fields": [
+      "title",
+      "paragraph1",
+      "paragraph2"
+    ]
+  },
+  {
+    "templateId": "template-8",
+    "name": "Слайд с картинкой 2",
+    "category": "контент",
+    "whenToUse": "Два столбца текста + визуал снизу",
+    "fields": [
+      "title",
+      "paragraph1",
+      "paragraph2"
+    ]
+  },
+  {
+    "templateId": "template-9",
+    "name": "Буллеты",
+    "category": "контент",
+    "whenToUse": "Ключевые тезисы (до 8 пунктов)",
+    "fields": [
+      "title",
+      "bullet_1",
+      "bullet_2",
+      "bullet_3",
+      "bullet_4",
+      "bullet_5",
+      "bullet_6",
+      "bullet_7",
+      "bullet_8"
+    ]
+  }
+]

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #000; overflow-x: hidden; }
+        .slide { position: relative; width: 1920px; height: 1080px; overflow: hidden; }
+        .slide img.background { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
+        .heading { position: absolute; left: 88.32px; top: 61.44px; font-size: 48px; color: white; font-weight: 400; line-height: 0.9; white-space: nowrap; }
+        
+        .timeline-line { position: absolute; left: 0; top: 424px; width: 100%; height: 3px; background: rgba(255, 255, 255, 0.3); }
+        .timeline-point { position: absolute; width: 23px; height: 23px; background: #FFE781; border-radius: 50%; top: 412px; }
+        .timeline-circle { position: absolute; width: 94px; height: 94px; background: rgba(255, 255, 255, 0.1); border-radius: 50%; top: 377px; border: 1px solid rgba(255, 255, 255, 0.16); }
+        
+        .c1 { left: 270px; } .c2 { left: 675px; } .c3 { left: 1086px; } .c4 { left: 1497px; }
+        .p1 { left: 305px; } .p2 { left: 710px; } .p3 { left: 1121px; } .p4 { left: 1532px; }
+
+        .column { position: absolute; top: 534px; width: 298px; color: white; display: flex; flex-direction: column; gap: 16px; }
+        .col-title { font-size: 28px; font-weight: 600; color: #FFE781; }
+        .col-text { font-size: 22px; font-weight: 400; color: #D1D1D1; line-height: 1.4; }
+        
+        .col1 { left: 210px; } .col2 { left: 615px; } .col3 { left: 1026px; } .col4 { left: 1437px; }
+
+        .footer-logo { position: absolute; left: 1606.53px; top: 953.94px; width: 225px; height: 62px; }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <img src="/assets/91c825f6107036a4b04b5de1798624c0250fa53c.png" alt="" class="background">
+        <p class="heading">{{title}}</p>
+        
+        <div class="timeline-line"></div>
+        <div class="timeline-circle c1"></div> <div class="timeline-circle c2"></div> <div class="timeline-circle c3"></div> <div class="timeline-circle c4"></div>
+        <div class="timeline-point p1"></div> <div class="timeline-point p2"></div> <div class="timeline-point p3"></div> <div class="timeline-point p4"></div>
+        
+        <style>
+            /* Hack to hide empty elements: If {{var}} is empty, class becomes "hide" */
+            .hide { display: none !important; }
+        </style>
+        <div class="column col1">
+            <div class="col-title {{title_1}}hide">{{title_1}}</div>
+            <div class="col-text {{text_1}}hide">{{text_1}}</div>
+        </div>
+        <div class="column col2">
+            <div class="col-title {{title_2}}hide">{{title_2}}</div>
+            <div class="col-text {{text_2}}hide">{{text_2}}</div>
+        </div>
+        <div class="column col3">
+            <div class="col-title {{title_3}}hide">{{title_3}}</div>
+            <div class="col-text {{text_3}}hide">{{text_3}}</div>
+        </div>
+        <div class="column col4">
+            <div class="col-title {{title_4}}hide">{{title_4}}</div>
+            <div class="col-text {{text_4}}hide">{{text_4}}</div>
+        </div>
+
+        <img src="/assets/1fcb1065a69e3b98f5d3209cc5c4a157837f949e.png" alt="" class="footer-logo">
+    </div>
+</body>
+</html>
