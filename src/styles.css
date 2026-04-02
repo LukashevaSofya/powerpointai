@@ -23,41 +23,152 @@ body {
   overflow: hidden;
 }
 
-/* ─── Ассистент Слайда ─── */
-.assistant-panel {
-  border-top: 1px solid var(--border);
-  background: var(--bg-secondary);
-  padding: 12px 16px;
+/* ─── Вкладки ─── */
+.tabs {
   display: flex;
-  flex-direction: column;
-  gap: 8px;
-  flex-shrink: 0;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
 }
-.assistant-header {
+.tab-btn {
+  flex: 1;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  padding: 12px 0;
   font-size: 13px;
-  font-weight: 600;
-  color: var(--accent-light);
-  margin-bottom: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
 }
-.assistant-content textarea {
-  width: 100%;
-  background: var(--bg-primary);
+.tab-btn.active {
+  color: var(--accent-light);
+  border-bottom-color: var(--accent);
+}
+.tab-view {
+  display: none;
+  flex: 1;
+  flex-direction: column;
+  overflow: hidden;
+}
+.tab-view.active {
+  display: flex;
+}
+
+/* ─── Каталог ─── */
+.catalog-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 16px;
+  overflow-y: auto;
+}
+.catalog-item {
+  background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  color: var(--text-primary);
-  padding: 8px;
-  font-family: inherit;
-  font-size: 13px;
-  resize: vertical;
-  margin-bottom: 8px;
-}
-.assistant-content textarea:focus {
-  border-color: var(--accent);
-  outline: none;
-}
-#assistantText {
+  aspect-ratio: 16/9;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
   color: var(--text-secondary);
-  background: rgba(0,0,0,0.2);
+  text-align: center;
+  padding: 8px;
+  transition: border-color 0.2s;
+  overflow: hidden;
+  position: relative;
+}
+.catalog-item:hover {
+  border-color: var(--accent);
+}
+.catalog-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0; left: 0;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+.catalog-item:hover img {
+  opacity: 0.8;
+}
+.catalog-item span {
+  position: relative;
+  z-index: 2;
+  background: rgba(0,0,0,0.6);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* ─── Плашка выделения текста ─── */
+.selection-bubble {
+  background: var(--bg-secondary);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-sm);
+  margin: 0 16px;
+  padding: 12px;
+  flex-shrink: 0;
+}
+.sb-header {
+  font-size: 12px;
+  color: var(--accent-light);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.sb-text {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-style: italic;
+  max-height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/* ─── Редактор (Модалка) ─── */
+.slide-editor {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: var(--bg-primary);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+.editor-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+}
+.editor-hint {
+  padding: 8px 16px;
+  font-size: 12px;
+  color: #FFE781;
+  background: rgba(255, 231, 129, 0.1);
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 231, 129, 0.2);
+}
+.editor-frame-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  padding: 16px;
+  overflow: hidden;
+}
+.editor-frame-container iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: none;
+  background: #000;
+  border-radius: 4px;
 }
 
 /* ─── Контейнер ─── */
