@@ -16,8 +16,8 @@
   <Description DefaultValue="AI-генератор корпоративных презентаций Финам" />
 
   <!-- Иконки (можно заменить на свои) -->
-  <IconUrl DefaultValue="https://localhost:3000/assets/icon-32.png" />
-  <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/icon-64.png" />
+  <IconUrl DefaultValue="https://localhost:3001/assets/icon-32.png" />
+  <HighResolutionIconUrl DefaultValue="https://localhost:3001/assets/icon-64.png" />
 
   <!-- Разрешения -->
   <Permissions>ReadWriteDocument</Permissions>
@@ -29,7 +29,7 @@
 
   <!-- Главная страница по умолчанию -->
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://localhost:3000/index.html" />
+    <SourceLocation DefaultValue="https://localhost:3001/index.html" />
   </DefaultSettings>
 
   <!-- Расширенные настройки для PowerPoint -->
@@ -75,7 +75,7 @@
     <!-- Ресурсы (строки, URL, иконки) -->
     <Resources>
       <bt:Urls>
-        <bt:Url id="TaskpaneUrl" DefaultValue="https://localhost:3000/index.html" />
+        <bt:Url id="TaskpaneUrl" DefaultValue="https://localhost:3001/index.html" />
       </bt:Urls>
 
       <bt:ShortStrings>
@@ -88,9 +88,9 @@
       </bt:LongStrings>
 
       <bt:Images>
-        <bt:Image id="Icon16" DefaultValue="https://localhost:3000/assets/icon-16.png" />
-        <bt:Image id="Icon32" DefaultValue="https://localhost:3000/assets/icon-32.png" />
-        <bt:Image id="Icon80" DefaultValue="https://localhost:3000/assets/icon-80.png" />
+        <bt:Image id="Icon16" DefaultValue="https://localhost:3001/assets/icon-16.png" />
+        <bt:Image id="Icon32" DefaultValue="https://localhost:3001/assets/icon-32.png" />
+        <bt:Image id="Icon80" DefaultValue="https://localhost:3001/assets/icon-80.png" />
       </bt:Images>
     </Resources>
 

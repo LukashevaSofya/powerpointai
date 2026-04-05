@@ -3,54 +3,77 @@
     "templateId": "template-1",
     "name": "Обложка — 2 строки",
     "category": "обложка",
-    "whenToUse": "Первый слайд, короткий заголовок"
+    "whenToUse": "Первый слайд, короткий заголовок",
+    "fields": ["title", "subtitle", "name", "position"]
   },
   {
     "templateId": "template-2",
     "name": "Обложка — 3 строки",
     "category": "обложка",
-    "whenToUse": "Первый слайд, длинный заголовок"
+    "whenToUse": "Первый слайд, длинный заголовок с описанием",
+    "fields": ["title", "subtitle", "description", "name", "position"]
   },
   {
     "templateId": "template-3",
-    "name": "Разделитель",
+    "name": "Разделитель (синий)",
     "category": "разделитель",
-    "whenToUse": "Переход между разделами"
+    "whenToUse": "Переход между разделами, акцентный",
+    "fields": ["divider_text"]
   },
   {
     "templateId": "template-4",
     "name": "Текстовый слайд",
     "category": "контент",
-    "whenToUse": "Описание, вводный текст"
+    "whenToUse": "Описание, вводный текст, пояснение",
+    "fields": ["title", "paragraph1"]
   },
   {
     "templateId": "template-5",
-    "name": "Разделитель 2",
+    "name": "Разделитель (тёмный)",
     "category": "разделитель",
-    "whenToUse": "Переход к следующему блоку"
+    "whenToUse": "Переход к следующему блоку, минималистичный",
+    "fields": ["divider_text"]
   },
   {
     "templateId": "template-6",
     "name": "Длинный список",
     "category": "контент",
-    "whenToUse": "Много пунктов"
+    "whenToUse": "Много пунктов (до 13), перечисление",
+    "fields": ["title", "list_item_1", "list_item_2", "list_item_3", "list_item_4", "list_item_5", "list_item_6", "list_item_7", "list_item_8", "list_item_9", "list_item_10", "list_item_11", "list_item_12", "list_item_13"]
   },
   {
     "templateId": "template-7",
-    "name": "Слайд с картинкой 1",
+    "name": "Слайд с картинкой (текст слева)",
     "category": "контент",
-    "whenToUse": "Текст + визуал"
+    "whenToUse": "Текст слева + визуал справа",
+    "fields": ["title", "paragraph1", "paragraph2"]
   },
   {
     "templateId": "template-8",
-    "name": "Слайд с картинкой 2",
+    "name": "Слайд с картинкой (текст справа)",
     "category": "контент",
-    "whenToUse": "Текст + визуал, вариант 2"
+    "whenToUse": "Визуал слева + текст справа",
+    "fields": ["title", "paragraph1", "paragraph2"]
   },
   {
     "templateId": "template-9",
     "name": "Буллеты",
     "category": "контент",
-    "whenToUse": "Ключевые тезисы"
+    "whenToUse": "Ключевые тезисы (до 8 пунктов)",
+    "fields": ["title", "bullet_1", "bullet_2", "bullet_3", "bullet_4", "bullet_5", "bullet_6", "bullet_7", "bullet_8"]
+  },
+  {
+    "templateId": "template-10",
+    "name": "Таймлайн",
+    "category": "контент",
+    "whenToUse": "Этапы, хронология, 4 вехи",
+    "fields": ["title", "title_1", "text_1", "title_2", "text_2", "title_3", "text_3", "title_4", "text_4"]
+  },
+  {
+    "templateId": "template-11",
+    "name": "Таблица показателей",
+    "category": "контент",
+    "whenToUse": "Сравнительная таблица, цифры, KPI",
+    "fields": ["title", "col_1", "col_2", "col_3", "col_4", "col_5", "col_6", "row1_name", "row1_c1", "row1_c2", "row1_c3", "row1_c4", "row1_c5", "row1_c6"]
   }
 ]

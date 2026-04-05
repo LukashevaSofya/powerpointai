@@ -31,7 +31,7 @@ export default defineConfig({
   root: '.',
   publicDir: 'public',
   server: {
-    port: 3000,
+    port: 3001,
     https: httpsConfig,
     // Включаем CORS для WebView2
     headers: {

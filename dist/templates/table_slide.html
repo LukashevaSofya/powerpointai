@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #000; overflow-x: hidden; }
+        .slide { position: relative; width: 1920px; height: 1080px; overflow: hidden; }
+        .slide img.background { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
+        .heading { position: absolute; left: 88.32px; top: 61.44px; font-size: 48px; color: white; font-weight: 400; line-height: 0.9; white-space: nowrap; }
+        
+        table { position: absolute; left: 88px; top: 160px; width: 1744px; border-collapse: collapse; color: white; font-size: 24px; }
+        th { font-weight: 600; color: #D1D1D1; border-bottom: 2px solid rgba(255,255,255,0.2); padding: 20px 10px; text-align: center; }
+        th:first-child { text-align: left; width: 30%; }
+        td { padding: 20px 10px; border-bottom: 1px solid rgba(255,255,255,0.1); text-align: center; }
+        td:first-child { text-align: left; }
+        tr:nth-child(5) { color: #FFE781; font-weight: 600; }
+        
+        .footer-logo { position: absolute; left: 1606.53px; top: 953.94px; width: 225px; height: 62px; }
+        
+        tr.hide { display: none; }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <img src="/assets/91c825f6107036a4b04b5de1798624c0250fa53c.png" alt="" class="background">
+        <p class="heading">{{title}}</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>{{col_1}}</th>
+                    <th>{{col_2}}</th>
+                    <th>{{col_3}}</th>
+                    <th>{{col_4}}</th>
+                    <th>{{col_5}}</th>
+                    <th>{{col_6}}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="{{row1_name}}hide"><td>{{row1_name}}</td><td>{{row1_c1}}</td><td>{{row1_c2}}</td><td>{{row1_c3}}</td><td>{{row1_c4}}</td><td>{{row1_c5}}</td><td>{{row1_c6}}</td></tr>
+                <tr class="{{row2_name}}hide"><td>{{row2_name}}</td><td>{{row2_c1}}</td><td>{{row2_c2}}</td><td>{{row2_c3}}</td><td>{{row2_c4}}</td><td>{{row2_c5}}</td><td>{{row2_c6}}</td></tr>
+                <tr class="{{row3_name}}hide"><td>{{row3_name}}</td><td>{{row3_c1}}</td><td>{{row3_c2}}</td><td>{{row3_c3}}</td><td>{{row3_c4}}</td><td>{{row3_c5}}</td><td>{{row3_c6}}</td></tr>
+                <tr class="{{row4_name}}hide"><td>{{row4_name}}</td><td>{{row4_c1}}</td><td>{{row4_c2}}</td><td>{{row4_c3}}</td><td>{{row4_c4}}</td><td>{{row4_c5}}</td><td>{{row4_c6}}</td></tr>
+                <tr class="{{row5_name}}hide"><td>{{row5_name}}</td><td>{{row5_c1}}</td><td>{{row5_c2}}</td><td>{{row5_c3}}</td><td>{{row5_c4}}</td><td>{{row5_c5}}</td><td>{{row5_c6}}</td></tr>
+                <tr class="{{row6_name}}hide"><td>{{row6_name}}</td><td>{{row6_c1}}</td><td>{{row6_c2}}</td><td>{{row6_c3}}</td><td>{{row6_c4}}</td><td>{{row6_c5}}</td><td>{{row6_c6}}</td></tr>
+                <tr class="{{row7_name}}hide"><td>{{row7_name}}</td><td>{{row7_c1}}</td><td>{{row7_c2}}</td><td>{{row7_c3}}</td><td>{{row7_c4}}</td><td>{{row7_c5}}</td><td>{{row7_c6}}</td></tr>
+                <tr class="{{row8_name}}hide"><td>{{row8_name}}</td><td>{{row8_c1}}</td><td>{{row8_c2}}</td><td>{{row8_c3}}</td><td>{{row8_c4}}</td><td>{{row8_c5}}</td><td>{{row8_c6}}</td></tr>
+                <tr class="{{row9_name}}hide"><td>{{row9_name}}</td><td>{{row9_c1}}</td><td>{{row9_c2}}</td><td>{{row9_c3}}</td><td>{{row9_c4}}</td><td>{{row9_c5}}</td><td>{{row9_c6}}</td></tr>
+            </tbody>
+        </table>
+
+        <img src="/assets/1fcb1065a69e3b98f5d3209cc5c4a157837f949e.png" alt="" class="footer-logo">
+    </div>
+</body>
+</html>
